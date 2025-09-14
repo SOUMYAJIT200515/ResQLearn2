@@ -5,7 +5,26 @@ export default function About() {
   return (
     <main className="min-h-screen flex flex-col">
       {/* ✅ Navbar */}
-      <Navbar />
+      <nav className="absolute top-0 left-0 w-full flex justify-between items-center px-8 py-4 text-white bg-slate-800 z-20">
+        <h1 className="text-2xl font-bold drop-shadow-lg">ResQLearn</h1>
+        <ul className="flex space-x-10">
+          <li>
+            <a href="/home" className="hover:text-blue-400 drop-shadow-lg">Home</a>
+          </li>
+          <li>
+            <a href="/about" className="hover:text-blue-400 drop-shadow-lg">About Us</a>
+          </li>
+          <li>
+            <a href="/contact" className="hover:text-blue-400 drop-shadow-lg">Contact</a>
+          </li>
+          <li>
+            <a href="/login" className="bg-blue-600 px-4 py-2 rounded-lg hover:bg-blue-500 shadow-lg">Logout</a>
+          </li>
+          <li>
+            <a href="/profile" className="bg-white text-blue-600 px-4 py-2 rounded-lg hover:bg-gray-200 shadow-lg">Profile</a>
+          </li>
+        </ul>
+      </nav>
 
       {/* ✅ Background Section */}
       <section
